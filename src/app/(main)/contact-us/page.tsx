@@ -2,8 +2,6 @@ import { ContactForm } from "@/components/contact-form";
 import { Map } from "@/components/map";
 import { PageHeading } from "@/components/page-heading";
 
-const API_KEY = "";
-
 export default function AboutUs() {
   return (
     <div >

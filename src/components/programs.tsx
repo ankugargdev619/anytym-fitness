@@ -29,7 +29,7 @@ export const Programs = () => {
         <div className="my-10 text-4xl text-center">Training Programs</div>
         <div className="flex gap-5 justify-center max-w-screen flex-wrap"> 
             {programs.map((program,_id)=>(
-                <Program title={program.title} imageUrl={program.imageUrl} description={program.description} />
+                <Program key={_id} title={program.title} imageUrl={program.imageUrl} description={program.description} />
             ))}
         </div>
     </div>

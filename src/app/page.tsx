@@ -1,5 +1,3 @@
-
-import { Loader } from "@/components/loader";
 import { Hero } from "@/components/hero";
 import { Pricing } from "@/components/pricing";
 import { Programs } from "@/components/programs";

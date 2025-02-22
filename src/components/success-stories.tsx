@@ -29,7 +29,7 @@ export const SuccessStories = () => {
         <div className="my-10 text-4xl text-center">Success Stories</div>
         <div className="flex gap-5 justify-center max-w-screen flex-wrap"> 
                     {stories.map((stories,_id)=>(
-                        <SuccessCard name={stories.name} imageUrl={stories.imageUrl} description={stories.description} />
+                        <SuccessCard key={_id} name={stories.name} imageUrl={stories.imageUrl} description={stories.description} />
                     ))}
                 </div>
     </div>

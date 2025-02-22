@@ -2,7 +2,6 @@
 
 import {useRef, useEffect, useState} from "react";
 import {Loader} from "@googlemaps/js-api-loader";
-import { LoadingAnimation } from "./loader";
 
 export const Map = () =>{
     const [isLoading,setIsLoading] = useState(true);
@@ -30,13 +29,11 @@ export const Map = () =>{
             
             const { Map } = await loader.importLibrary('maps');
             const { AdvancedMarkerElement } = await google.maps.importLibrary("marker") as google.maps.MarkerLibrary;
-
-
             const map = new Map(mapRef.current as HTMLDivElement,mapOptions)
-            const  marker = new AdvancedMarkerElement({
+            new AdvancedMarkerElement({
                 map:map,
                 position:position,
-                title: 'Uluru'
+                title: 'AnyTym Fitness'
             })
 
             setIsLoading(false);

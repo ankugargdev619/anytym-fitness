@@ -1,11 +1,7 @@
 import { PageHeading } from "@/components/page-heading"
 
 
-interface AboutUsProps {
-
-}
-
-export default function AboutUs ({} : AboutUsProps)  {
+export default function AboutUs ()  {
     return <div>
         <PageHeading title="About Us" />
         <div className="px-10 md:px-20 py-10 text-xl">

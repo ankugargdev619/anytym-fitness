@@ -1,4 +1,3 @@
-import { features } from "process"
 import { PricingCard } from "./pricing-card"
 
 
@@ -63,30 +62,6 @@ const plans = [
             },
             {
                 description : "Track Progess",
-                flag : true
-            }
-        ]
-    }
-]
-
-const plan = [
-    
-    {
-        name : "Combo",
-        frequency : "quarter",
-        cost : 1800,
-        popular : true,
-        features : [
-            {
-                description : "Training Program",
-                flag : true
-            },
-            {
-                description : "Diet Plan",
-                flag : true
-            },
-            {
-                description : "Tread Mill Access",
                 flag : true
             }
         ]
